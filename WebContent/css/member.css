@@ -1,0 +1,140 @@
+@CHARSET "UTF-8";
+body {
+    font-family: "Lato", sans-serif;
+}
+
+/* login페이지 */ 
+.main-head{
+    height: 150px;
+    background: #FFF;
+   
+}
+
+.sidenav {
+    height: 100%;
+    background-color: #334467;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* 로고 */
+#logo a{
+	color: #334467;
+	text-decoration: none;
+	background-color: white;
+	padding: 5px;
+}
+#logo{
+	font-family: 'Questrial', sans-serif;
+	text-align: right;
+}
+
+.main {
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 1000px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 1000px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+	
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 30%; 
+    }
+
+    .sidenav{
+        width: 30%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 60%;
+    }
+
+    .register-form{
+        margin-top: 40%;
+    }
+    
+    /* modify */
+	.modify-form{
+		margin-top: 70%;
+	}
+}
+
+.login-main-text{
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
+}
+
+.login-main-text h2{
+    font-weight: 300;
+}
+
+.btn-black{
+    background-color: #334467;
+    color: #fff;
+}
+.secession{
+	background-color: #334467;
+    color: #fff;
+	float: right;
+}
+
+.btn-dup{
+	width: 85px;
+	border: none;
+	border-radius: 20px 20px 20px 20px;
+	text-align: center;
+	margin-left: 10px;
+}
+
+.btn-dup2{
+	width: 85px;
+	border: none;
+	border-radius: 20px 20px 20px 20px;
+	margin-top: 5px;
+	text-align: center;
+}
+
+.btn-addr{
+	width: 120px;
+	border: none;
+	border-radius: 20px 20px 20px 20px;
+	text-align: center;
+	float: right;
+}
+
+.btn-email{
+	width: 100px;
+	border: none;
+	border-radius: 20px 20px 20px 20px;
+	text-align: center;
+	float: right;
+}
+
+.btn-emailck{
+	width: 100px;
+	border: none;
+	border-radius: 20px 20px 20px 20px;
+	text-align: center;
+	float: right;
+}
+
+#message{
+	float: right;
+}

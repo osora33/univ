@@ -1,0 +1,647 @@
+@CHARSET "UTF-8";
+
+#wrapper{
+	background: white !important;
+	width: 1100px;
+	margin: 0 auto;
+	border: none;
+	border-radius: 20px 20px 20px 20px;
+	padding-bottom: 2%;
+}
+
+#wrapper2{
+	background: white !important;
+	margin-left: 24%;
+	margin-top: 50px;
+	border: none;
+	border-radius: 20px 20px 20px 20px;
+	padding-bottom: 2%;
+}
+
+/*********************************************************************************/
+/* sub-menu                                                                 */
+/*********************************************************************************/
+
+#sub_menu{
+	position:relative;
+	width: 238px;
+	height: auto; 
+	float: left;
+	margin: 50px 0 20px 20px;
+	font-family:Verdana,Geneva,sans-serif;
+	font-size:1em;
+}/*너비 238px 정렬 왼쪽 밖여백20px
+글자체 Verdana,Geneva,sans-serif 글자크기 1em*/
+
+#sub_menu ul{
+	margin: 0 0 0 10px; 
+	list-style: none;
+}/*밖여백 20 0 0 10 리스트스타일none*/
+
+.upper{
+	margin-bottom: 10px;
+}
+
+.upper>a{
+	text-decoration: none;
+	color: #334467;
+	display:block;
+	height: 15px;
+	width: 150px;
+	padding-top: 7px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	border-radius: 20px;
+	background: #334467;
+	color: white;
+	}
+
+.lower a{
+	text-decoration: none;
+	color: #334467;
+	display:block;
+	height: 15px;
+	width: 150px;
+	padding: 7px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #999;
+	background-image: url("../images/bullet.gif");
+	background-repeat: no-repeat;
+	background-position: right center;
+	}
+
+.lower a:hover{
+	color: #F90;
+	background-image: url("../images/bullet_orange.gif");
+	background-repeat: no-repeat;
+	background-position: right center;
+}	
+
+.now{
+	color: #F90 !important;
+	background-image: url("../images/bullet_orange.gif") !important;
+}
+
+/*********************************************************************************/
+/* board                                                                 */
+/*********************************************************************************/
+
+article{
+	margin: 0 20%;
+	width: 800px;
+	padding-right: 30px;
+	font-family: Verdana,Geneva,sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	display: inline;
+}
+
+	/*정렬 오른쪽 너비 660px 안오른쪽여백 30px
+	글자체Verdana,Geneva,sans-serif 글자크기1em 
+	줄간격1.5em */
+	
+article h1{
+/* 	font-family: "Times New Roman"; */
+	font-size: 45px; 
+	color: #CCC; 
+	margin: 20px 40px 20px 0;
+	font-weight: normal;
+	text-align: right;
+}
+	/*글자체 Times New Roman 글자크기 45px
+	글자색 #CCC 밖여백20px 0  글자굵기 normal*/
+	
+article p{
+	padding-left: 10px
+	}/*안왼쪽여백 10px*/
+	
+figure.ceo{
+	float: right;
+	margin: 5px;
+}/*정렬 오른쪽 밖여백 5px*/
+
+figcaption{
+	text-align: center;
+	color:#39F 
+}/*글자정렬 가운데 글자색 #39F*/
+
+.clear{
+	clear: both;
+}
+
+/*------------------*/
+
+#sub_img_center{
+	width: 971px;
+	height: 179px;
+	background-image: url("../images/center/sub_back.gif");
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+	/*너비 971 높이179 
+	배경이미지 images/center/sub_back.png
+	반복 no 위치left top */
+	
+article table#notice{
+	width: 800px;
+	border-collapse: collapse;
+	margin-top: 50px;
+}/*너비 670 테이블공간없애기*/
+
+@font-face{
+	font-family: "seo";
+	src: url("../images/segoeui.eot");
+	src: local(""),
+		url("../images/segoeui.woff")format("woff"),
+		url("../images/segoeui.ttf")format("truetype");
+}
+	     
+article table#notice th{
+	height: 20px;
+	text-transform: capitalize;
+	font-size: 14px;
+	font-family: seo; 
+	font-weight: bold;
+	padding: 5px;
+	background-image: url("../images/board/t_back.png");
+	background-repeat: repeat-x;
+	background-position: center center; color:#FFF 
+}
+	/*높이 20 첫글자대문자
+	글자크기 14 글자모양 seo 굵기 bold 안여백 5px
+	배경이미지 images/center/t_back.jpg 반복 x 
+	위치 center center 글자색 #FFF*/
+	
+article table#notice td{
+	text-align: center;
+	padding: 6px 0; 
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #999;
+	color: #334467;
+}
+	/*글자정렬 center
+	안여백 6px 0 테두리아래너비 1px 테두리아래스타일dotted
+	테두리아래색 #999*/
+
+#sdf{
+	font-size: 0.8em;
+}
+
+article table#notice td.left{
+	text-align: left;
+}/*글자정렬 left*/
+
+article th.tno{
+	width: 50px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+}/*너비 50px 
+왼쪽위 둥글게5px 왼쪽아래 둥글게5px*/
+
+article th.ttitle{
+	width: 400px; 
+	letter-spacing: 0.7em
+}/*너비 400px 문자간격 0.7em*/
+
+article th.twrite{
+	width: 100px;
+}/*너비 100px*/
+
+article th.tdate{
+	width: 50px;
+}/*너비 50px*/
+
+article th.tread{
+	width: 50px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	}/*너비 50px 
+	오른쪽위 둥글게5px 오른쪽아래 둥글게5px*/
+	
+.contenttd{
+	height: 300px !important;
+}
+	
+#undermenu{
+	margin-right: 40px;
+}
+
+.btn{
+	width: 70px;
+	height: 25px;
+	border: none;
+	border-radius: 20px 20px 20px 20px;
+	text-align: center;
+	margin: 2px;
+	background: #334467;
+	color: white;
+}
+
+article #table_search{
+	margin: 15px 0 10px 0;
+	float: right;
+}/*밖여백 15px 0 10px 0 정렬 right*/
+
+#table_search .input_box{
+	height: 20px; 
+	width: 150px;
+	border-radius:20px;
+	background-color: #334467;
+	border: 1px solid white;
+	color: white;
+	padding: 0 10px;
+}
+	/*높이 20px 너비 200px
+	테두리 1px solid #333 테두리둥글게 10px 배경색#FEFDED*/
+	
+/* #table_search .btn{ */
+/* 	padding: 2px; */
+/* 	margin: 0 0 0 5px; */
+/* 	width: 90px; */
+/* 	height: 23px; */
+/* 	border: 1px solid #999; */
+/* 	border-radius:10px; */
+/* 	color: #334467; */
+/* 	background-image: url("../images/center/t_back.png"); */
+/* 	background-repeat: repeat-x; */
+/* 	background-position: center center */
+/* } */
+	/*안여백 2px 밖여백 0 0 0 5px
+	너비 90 높이 23 테두리 1 solid #999 테두리둥글게 10px
+	글자색 #FFF 
+	배경이미지 t_back.jpg repeat-x center center*/
+	
+#page_control{
+	text-align: center; 
+	margin: 20px 0 0 0;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15%;
+	margin-bottom: 5%;
+}
+
+
+	/*글자정렬 center 밖여백 20px 0 0 0
+	밖여백오른쪽 auto 밖여백왼쪽 auto*/
+	
+#page_control a{
+	padding: 2px 5px; 
+	text-decoration: none;
+	color: #333; 
+	margin: 5% 5px;
+/* 	margin-bottom: 5%; */
+}/*안여백 2px 5px 밑줄 none 글자색#333 밖여백 0 5px*/
+
+#page_control a:hover{
+	font-weight: bold; 
+	color: #F90;
+	text-decoration: underline;
+}/*글자굵기bold 글자색#F90 밑줄 underline*/
+
+article table#notice tr:hover{
+	background-color: #EEFDFF;
+	cursor: pointer;
+	cursor: hand;
+}
+	/*배경색 #EEFDFF
+	커서 pointer 커서 hand*/
+	
+.selected{
+	color: red !important;
+}
+
+.frselect{
+	background-color: lightgray;
+	border: 1px solid white;
+	border-radius: 20px 20px 20px 20px;
+	padding: 5px 5px;
+}
+	
+/*********************************************************************************/
+/* 글쓰기                                                                   */
+/*********************************************************************************/
+
+form
+{
+}
+		
+form label{
+	display: block;
+	text-align: left;
+	margin-bottom: 0.5em;
+}
+
+form .submit
+{
+	margin-top: 2em;
+	line-height: 1.5em;
+	font-size: 1.3em;
+}
+
+form input.text,
+form textarea{
+	position: relative;
+	-webkit-appearance: none;
+	display: block;
+	border: 0;
+	background: #fff;
+	background: rgba(255,255,255,0.75);
+	border-radius: 0.50em;
+	margin: 1em 0em;
+	padding: 1.50em 1em;
+	box-shadow: inset 0 0.1em 0.1em 0 rgba(0,0,0,0.05);
+	border: solid 1px rgba(0,0,0,0.15);
+	-moz-transition: all 0.35s ease-in-out;
+	-webkit-transition: all 0.35s ease-in-out;
+	-o-transition: all 0.35s ease-in-out;
+	-ms-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+	font-size: 1em;
+	outline: none;
+}
+
+form input.text:hover,
+form select:hover,
+form textarea:hover
+{
+}
+
+form input.text:focus,
+form select:focus,
+form textarea:focus{
+	box-shadow: 0 0 2px 1px #E0E0E0;
+	background: #fff;
+}
+
+form textarea{
+	min-height: 12em;
+}
+
+form .formerize-placeholder{
+	color: #555 !important;
+}
+
+form ::-webkit-input-placeholder{
+	color: #555 !important;
+}
+
+form :-moz-placeholder{
+	color: #555 !important;
+}
+
+form ::-moz-placeholder{
+	color: #555 !important;
+}
+
+form :-ms-input-placeholder{
+	color: #555 !important;
+}
+
+form ::-moz-focus-inner{
+	border: 0;
+}
+
+#notice input{
+	width: 60%;
+	height: 25px;
+	border: none;
+	background: #334467;
+	color: white;
+	border-radius: 20px 20px 20px 20px;
+	padding-left: 20px;
+}
+
+/*******************************************************************************
+content                                                                   
+*******************************************************************************/
+#dbcontent{
+	text-align: left !important;
+	padding: 30px !important;
+	width: 500px !important;
+}
+
+#dbcontent img{
+	max-width: 600px !important;
+}
+
+#write-btns{
+	margin: 15px 40px 10px 0;
+	float: right;
+}
+/*******************************************************************************
+ripple                                                                   
+*******************************************************************************/
+#ripple{
+	margin: 0 24%;
+	width: 72.5%
+}
+
+#ripple td{
+	text-align: left;
+	padding: 6px 0; 
+/* 	border-bottom-width: 1px; */
+/* 	border-bottom-style: dotted; */
+/* 	border-bottom-color: #999; */
+	color: #334467;
+}
+
+.rp{
+	margin-top: 3%;
+	margin-left: 24%;
+	width: 800px;
+	font-family: Verdana,Geneva,sans-serif;
+	font-size: 1em;
+	color: #334467 !important;
+	line-height: 1.5em;
+	display: inline-block;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #999;
+}
+
+.content{
+	min-height: 0 !important;
+	background: #efefef;
+	width: 95%;
+}
+
+.rpsm{
+	padding-bottom: 10px !important;
+}
+
+.rpid{
+	border: 1px solid white;
+	background: #334467;
+	border-radius : 20px;
+	color: white !important;
+	padding: 3px 10px !important;
+	display: inline-block;
+	margin-top: 5px; 
+}
+
+.rcontent{
+	padding-left: 50px !important;
+	width: 78.1% !important;
+}
+
+.rbtn{
+	width: 50px;
+	height: 25px;
+	border: none;
+	border-radius: 20px 20px 20px 20px;
+	text-align: center;
+	margin: 2px;
+	background: ligntgray;
+}
+
+.rbtns{
+	float: right;
+}
+
+.rbtns a{
+	text-decoration: none;
+}
+
+.rdate{
+	text-align: right !important;
+	font-size: 0.8em;
+}
+
+.rrtd{
+	width: 128% !important;
+	display: inline;
+}
+
+.rrcontent{
+	width: 109% !important;
+	background: #efefef;
+	border-radius: 0.50em;
+	border: 1px solid rgba(0,0,0,0.15);
+	min-height: 80px !important;
+}
+
+.rrsm{
+	text-align: right !important;
+	margin: 0 !important;
+}
+
+.rrbt{
+	width: 70px;
+	height: 60px;
+	border: none;
+	border-radius: 20px 20px 20px 20px;
+	text-align: center;
+	margin: 2px;
+	background: #334467;
+	color: white;
+}
+
+.ubt{
+	width: 70px;
+	height: 30px;
+	border: none;
+	border-radius: 20px 20px 20px 20px;
+	text-align: center;
+	margin: 2px;
+	background: #334467;
+	color: white;
+}
+
+/*******************************************************************************
+delete                                                                   
+*******************************************************************************/
+article table#delete{
+	width: 800px;
+	border-collapse: collapse;
+	margin-top: 40px;
+}/*너비 670 테이블공간없애기*/
+
+article table#delete td{
+	text-align: center;
+	padding: 6px 0; 
+	color: #334467;
+}
+
+#delete input{
+	width: 60%;
+	height: 25px;
+	border: none;
+	background: #334467;
+	color: white;
+	border-radius: 20px 20px 20px 20px;
+	padding-left: 20px;
+}
+
+/*******************************************************************************
+galary                                                                   
+*******************************************************************************/
+.gtable {
+	width: 400px !important;
+	height: 300px;
+	border: 1px solid #334467;
+	border-radius: 20px;
+	padding: 10px;
+	display:inline-block;
+	color: #334467;
+}
+
+.ntable{
+	width: 800px !important;
+	border: 1px solid #334467;
+	border-radius: 20px;
+	padding: 10px;
+	display:inline-block;
+	color: #334467;
+}
+
+.postnum{
+	width: 7%
+}
+
+.subject{
+	width: 58%
+}
+
+.status{
+	width: 20%
+}
+
+.price{
+	width: 15%;
+	text-align: right;
+}
+
+.overflow{
+	height: 250px !important;
+	overflow: hidden !important;
+	border-radius: 20px;
+}
+
+.thumnail img{
+	width: 100%;
+	height: auto;
+	display:inline-block;
+	position:relative
+}
+
+.noimage img{
+	width: 100%;
+/* 	margin-left: 35%; */
+}
+
+
+.priceip{
+	width: 48.3% !important;
+}
+
+/*******************************************************************************
+File                                                                   
+*******************************************************************************/
+.file{
+	background: none !important;
+	color: #334467 !important;
+	padding-left: 0px !important;
+	border-radius: 0px !important;
+}
