@@ -4,6 +4,7 @@
 프로젝트 포트폴리오 ppt [[다운로드]](https://github.com/osora33/univ/blob/main/univ.pptx)
 
  - jsp
+ - Javascript
  - JQuery
  - ajax
  - SMTP
